@@ -1,0 +1,7 @@
+git
+
+git -A
+
+git commit -m"mensaje"
+
+git push origin main
