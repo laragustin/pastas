@@ -1,7 +1,22 @@
-git
+commandos git
 
-git -A
+1)git -A
+2)git commit -m"mensaje"
+3)git push origin main
 
-git commit -m"mensaje"
 
-git push origin main
+//=========> antes de ejecutar, preder servidor sql
+
+
+comandos laravel
+
+php artisan migrate // ejecutar mnigraciones
+php artisan migrate:rollback // deshacer ultima migracion(conjunto)
+
+php artisan serve // inicial el servidor
+npm run dev // para visual
+
+
+php artisan make:model Nombre -m
+php artisan make:controller NombreController -r
+
