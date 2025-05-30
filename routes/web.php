@@ -30,5 +30,7 @@ Route::post('/carrito/agregar/{producto}', [CarritoController::class, 'agregar']
 Route::post('/carrito/eliminar/{producto}', [CarritoController::class, 'eliminar'])->name('carrito.eliminar');
 Route::post('/carrito/confirmar', [CarritoController::class, 'confirmar'])->name('carrito.confirmar');
 Route::get('/pedidos', [PedidoController::class, 'index'])->name('pedidos.index');
+Route::patch('/pedidos/{pedido}/aceptar', [PedidoController::class, 'aceptar'])->name('pedidos.aceptar');
+Route::patch('/pedidos/{pedido}/rechazar', [PedidoController::class, 'rechazar'])->name('pedidos.rechazar');
 
 require __DIR__.'/auth.php';
